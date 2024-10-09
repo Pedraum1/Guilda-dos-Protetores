@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->softDeletes();
+            $table->integer('reward_id');
             $table->date('completed_at');
             $table->string('title',60);
             $table->text('description');

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->SoftDeletes();
+            $table->integer('mission_id');
             $table->integer('xp');
             $table->integer('cp');
             $table->text('others');
