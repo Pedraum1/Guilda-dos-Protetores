@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Testes extends Controller
 {
     public function teste(){
-        return 'TESTES';
+        return strlen("");
     }
 }
