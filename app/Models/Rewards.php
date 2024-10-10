@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class Rewards extends Model
 {    
     /**
-     * Returns mission related to the reward
+     * Returns the mission related to the reward
      *
      * @return HasOne
      */

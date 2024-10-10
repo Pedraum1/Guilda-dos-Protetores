@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class Mission extends Model
 {        
     /**
-     * Returns mission's banner image
+     * Returns missions banner image
      *
      * @return HasOne
      */
