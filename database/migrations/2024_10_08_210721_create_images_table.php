@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('user_id');
-            $table->integer('missiom_id');
+            $table->integer('mission_id');
             $table->integer('character_id');
             $table->integer('spell_id');
             $table->integer('ability_id');

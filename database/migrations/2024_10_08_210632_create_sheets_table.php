@@ -15,7 +15,25 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('character_id');
-            //create more columns later
+            $table->string('name',50);
+            $table->string('class',25);
+            $table->string('race',30);
+            $table->integer('cp');
+            $table->integer('lvl');
+            $table->integer('reputation');
+            $table->string('antecedent',30);
+            $table->boolean('inspiration');
+            $table->integer('STR');
+            $table->integer('DEX');
+            $table->integer('CON');
+            $table->integer('INT');
+            $table->integer('WSD');
+            $table->integer('CAR');
+            $table->integer('armor');
+            $table->integer('initiave');
+            $table->integer('displacement');
+            $table->integer('HP');
+            $table->integer('MP');
         });
     }
 

@@ -17,12 +17,6 @@ return new class extends Migration
             $table->softDeletes();
             $table->integer('user_id');
             $table->integer('sheet_id');
-            $table->string('name',50);
-            $table->string('class');
-            $table->string('race');
-            $table->integer('cp');
-            $table->integer('lvl');
-            $table->integer('reputation');
         });
     }
 

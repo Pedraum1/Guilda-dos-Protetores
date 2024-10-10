@@ -23,7 +23,7 @@ class Subscription extends Model
      *
      * @return HasOne
      */
-    public function character():HasOne{
-        return $this->hasOne(Character::class);
+    public function character():BelongsTo{
+        return $this->belongsTo(Character::class);
     }
 }

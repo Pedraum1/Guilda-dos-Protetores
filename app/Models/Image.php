@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -15,8 +16,8 @@ class Image extends Model
      *
      * @return HasOne
      */
-    public function user(): HasOne{
-        return $this->hasOne(User::class);
+    public function user(): BelongsTo{
+        return $this->belongsTo(User::class);
     }
         
     /**
@@ -24,8 +25,8 @@ class Image extends Model
      *
      * @return HasOne
      */
-    public function character(): HasOne{
-        return $this->hasOne(Character::class);
+    public function character(): BelongsTo{
+        return $this->belongsTo(Character::class);
     }
     
     /**
@@ -33,7 +34,7 @@ class Image extends Model
      *
      * @return HasOne
      */
-    public function mission(): HasOne {
-        return $this->hasOne(Mission::class);
+    public function mission(): BelongsTo {
+        return $this->belongsTo(Mission::class);
     }
 }

@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Rewards extends Model
 {    
@@ -13,7 +14,7 @@ class Rewards extends Model
      *
      * @return HasOne
      */
-    public function mission(): HasOne{
-        return $this->hasOne(Mission::class);
+    public function mission(): BelongsTo{
+        return $this->belongsTo(Mission::class);
     }
 }
